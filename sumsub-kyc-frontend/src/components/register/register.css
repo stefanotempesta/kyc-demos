@@ -1,0 +1,130 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #20252c;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mainCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-box input {
+
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: #bbbbbb;
+}
+
+.input-box input:focus {
+    outline: none;
+    border: 2px solid #007bff;
+    background-color: #444444;
+}
+
+.input-box.button {
+    text-align: center;
+}
+
+.input-box button  {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    border: none; /* Remove border */
+    
+}
+
+.input-box button:hover {
+    background-color: #0056b3;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-left-color: #0056b3;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    display: inline-block; /* Ensure spinner stays inline */
+    vertical-align: middle; /* Align spinner with text */
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.alreadyRegistered button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    border: none; /* Remove border */
+   text-align: center; 
+
+}
+
+.alreadyRegistered button:hover {
+    background-color: #0056b3;   
+}
+
+.alreadyRegistered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
